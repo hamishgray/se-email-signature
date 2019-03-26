@@ -1,0 +1,16 @@
+// These are the default settings for type
+
+html { // This is the root size for REM
+  font-size: 87.5%; // = 13px
+  @include bp($md) { font-size: 92.5%; } // = 14px
+  @include bp($xl) { font-size: 100%; } // = 15px
+}
+
+body {
+  font-family: $font-core;
+  margin: 0;
+  // dark theme
+  color: $grey-darkest;
+  background-color: $white;
+  line-height: 1.6;
+}

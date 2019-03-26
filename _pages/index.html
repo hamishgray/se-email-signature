@@ -1,0 +1,70 @@
+---
+layout: default
+id: email-signature
+nav: true
+nav-order: 1
+title: Email Signature
+---
+
+<div class="container container--100 container--no-padding">
+  <!-- Output -->
+  <div class="boxpad--xxl bg--white">
+    {% include signature-output.html %}
+  </div>
+</div>
+
+
+<!-- Form -->
+<div class="form boxpad--xxl text">
+
+  <h1 class="title title--lg">Email signature builder</h1>
+  <hr class="hr--left">
+  <div>
+    <p class="text text--xxl">Enter your details below to create your own Secret Escapes email signature</p>
+  </div>
+
+  <div class="form__input vpad--xxs">
+    <label for="input-name">Select your country: </label>
+    <select name="country" id="country">
+      <option value="uk">United Kingdom</option>
+      <option value="de">Germany</option>
+      <option value="it">Italy</option>
+      <option value="fr">France</option>
+      <option value="es">Spain</option>
+      <option value="nl">Netherlands</option>
+      <option value="be">Belgium</option>
+      <option value="ch">Switzerland</option>
+      <option value="no">Norway</option>
+      <option value="dk">Denmark</option>
+      <option value="se">Sweden</option>
+      <option value="hk">Hong Kong</option>
+      <option value="sg">Singapore</option>
+      <option value="id">Indonesia</option>
+      <option value="my">Malaysia</option>
+      <option value="us">United States</option>
+    </select>
+  </div>
+
+  <div class="form__input vpad--xxs">
+    <label for="input-name">Name: </label><input type="text" id="input-name">
+  </div>
+
+  <div class="form__input vpad--xxs">
+    <label for="input-position">Position: </label><input type="text" id="input-position">
+  </div>
+
+  <div class="form__input vpad--xxs">
+    <label for="input-phone">Phone: </label><input type="text" id="input-phone">
+    <div>
+      <input type="checkbox" name="display-phone" checked> Show phone number
+    </div>
+  </div>
+
+  <div class="form__input vpad--xxs">
+    <label for="input-email">Email: </label><input type="text" id="input-email">
+    <div>
+      <input type="checkbox" name="display-email" checked> Show email address
+    </div>
+  </div>
+
+</div>
