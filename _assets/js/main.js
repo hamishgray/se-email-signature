@@ -48,6 +48,7 @@ $('input[name=display-email]').change(function(){
 
 // UK Default
 var web_url = "https://www.secretescapes.com/";
+var logo_img = "https://d1x3cbuht6sy0f.cloudfront.net/media/_admin/email/secretescapes.png";
 var facebook_url = "https://www.facebook.com/SecretEscapes/";
 var instagram_url = "https://www.instagram.com/secretescapes/";
 var twitter_url = "https://twitter.com/secret_escapes";
@@ -61,6 +62,7 @@ function localisation(){
   $('#social').show();
   $('#social').children().show();
   $('#address-row').show();
+  var logo_img = "https://d1x3cbuht6sy0f.cloudfront.net/media/_admin/email/secretescapes.png";
 
   if( $("#country").val() == 'uk' ){
     // United Kingdom
@@ -91,6 +93,7 @@ function localisation(){
   }else if( $("#country").val() == 'fr' ){
     // France
     var web_url = "https://www.evasionssecretes.fr";
+    var logo_img = "https://d1x3cbuht6sy0f.cloudfront.net/media/_admin/email/evasionssecretes.png";
     $('#social').hide();
     $('#address-row').hide();
 
@@ -184,6 +187,7 @@ function localisation(){
   $('#web').html(web_url);
   $('#web_href').attr("href",web_url);
   $('#logo_href').attr("href",web_url);
+  $('#logo_img').attr("src",logo_img);
   $('#facebook').attr("href",facebook_url);
   $('#instagram').attr("href",instagram_url);
   $('#twitter').attr("href",twitter_url);
