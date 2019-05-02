@@ -1,0 +1,13 @@
+{% assign countries = site.data.countries %}
+
+{% for country in countries %}
+  <div id="{{country.id}}-social">
+    <!-- {{country.id}} socials -->
+    {% for social in country.socials %}
+    <span id="social__{{social.id}}">
+      <a id="{{social.id}}" href="{{social.link}}" style="color:#555555;text-decoration:none;"><img alt="{{social.name}}" src="https://d1x3cbuht6sy0f.cloudfront.net/media/_admin/email/{{social.id}}.png"></a>
+      &nbsp;
+    </span>
+    {% endfor %}
+  </div>
+{% endfor %}

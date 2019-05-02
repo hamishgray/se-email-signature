@@ -1,0 +1,266 @@
+
+- id: uk
+  name: United Kingdom
+  site-link: https://www.secretescapes.com
+  address: Floor 4, 120 Holborn, London, EC1N 2TD
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes/
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapes/
+    - id: twitter
+      name: Twitter
+      link: https://twitter.com/secret_escapes
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+    - id: youtube
+      name: YouTube
+      link: https://www.youtube.com/user/SecretEscapesUK/videos
+
+- id: de
+  name: Germany
+  site-link: https://www.secretescapes.de
+  address: Klosterstraße 62  | 10179 Berlin
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes.de/
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapesde/
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+
+- id: it
+  name: Italy
+  site-link: https://www.secretescapes.it
+  address: Floor 4, 120 Holborn, London, EC1N 2TD
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapesItalia
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapes_italia/
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+    - id: youtube
+      name: YouTube
+      link: https://www.youtube.com/channel/UCh5OBs7fH7W4NQSy4q-1Hgg/videos
+
+- id: fr
+  name: France
+  site-link: https://www.evasionssecretes.fr
+  address: Floor 4, 120 Holborn, London, EC1N 2TD
+  logo: https://d1x3cbuht6sy0f.cloudfront.net/media/_admin/email/evasionssecretes.png
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/EvasionsSecretes/
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/evasions_secretes/
+    - id: twitter
+      name: Twitter
+      link: https://twitter.com/e_secretes
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+    - id: youtube
+      name: YouTube
+      link: https://www.youtube.com/channel/UCouHr30uo69QfiyLKkaW1KA
+
+- id: es
+  name: Spain
+  site-link: https://es.secretescapes.com
+  address: Floor 4, 120 Holborn, London, EC1N 2TD
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapesES
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapes_es/
+    - id: twitter
+      name: Twitter
+      link: https://twitter.com/SecretEscapesES
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+
+- id: nl
+  name: Netherlands
+  site-link: https://nl.secretescapes.com
+  address: Nieuwezijds Voorburgwal 162, 1012 SJ
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapesNLBE/
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+    - id: youtube
+      name: YouTube
+      link: https://www.youtube.com/channel/UCm8cmKl3bA5CjCoQgGDwiIA
+
+- id: be
+  name: Belgium
+  site-link: https://be.secretescapes.com
+  address: Nieuwezijds Voorburgwal 162, 1012 SJ
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapesNLBE/
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+    - id: youtube
+      name: YouTube
+      link: https://www.youtube.com/channel/UCm8cmKl3bA5CjCoQgGDwiIA
+
+- id: ch
+  name: Switzerland
+  site-link: https://ch.secretescapes.com
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes.de/
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapesde/
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+
+- id: "no"
+  name: Norway
+  site-link: https://no.secretescapes.com
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes.no/
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+
+- id: dk
+  name: Denmark
+  site-link: https://dk.secretescapes.com
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes.dk/
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+
+- id: se
+  name: Sweden
+  site-link: https://www.secretescapes.se
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes.se
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapessverige
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+    - id: youtube
+      name: YouTube
+      link: https://www.youtube.com/channel/UCwNSxyjDxYxhZTuXPZdQLkA
+
+- id: hk
+  name: Hong Kong
+  site-link: https://hk.secretescapes.com
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes/
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapes_asia/
+    - id: twitter
+      name: Twitter
+      link: https://twitter.com/secretescapessg
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+
+- id: sg
+  name: Singapore
+  site-link: https://sg.secretescapes.com
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes/
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapes_asia/
+    - id: twitter
+      name: Twitter
+      link: https://twitter.com/secretescapessg
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+
+- id: id
+  name: Indonesia
+  site-link: https://id.secretescapes.com
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes/
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapes_asia/
+    - id: twitter
+      name: Twitter
+      link: https://twitter.com/secretescapessg
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+
+- id: my
+  name: Malaysia
+  site-link: https://my.secretescapes.com
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes/
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapes_asia/
+    - id: twitter
+      name: Twitter
+      link: https://twitter.com/secretescapessg
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+
+- id: us
+  name: United States
+  site-link: https://us.secretescapes.com
+  socials:
+    - id: facebook
+      name: Facebook
+      link: https://www.facebook.com/SecretEscapes/
+    - id: instagram
+      name: Instagram
+      link: https://www.instagram.com/secretescapesus/
+    - id: twitter
+      name: Twitter
+      link: https://twitter.com/secret_escapes
+    - id: linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/secret-escapes/
+    - id: youtube
+      name: YouTube
+      link: https://www.youtube.com/user/SecretEscapesUK/videos
+

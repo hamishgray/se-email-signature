@@ -1,0 +1,11 @@
+{% assign countries = site.data.countries %}
+
+{% for country in countries %}
+<div id="{{country.id}}-address">
+  {% if country.address %}
+  <!-- {{country.id}} address -->
+  {{country.address}}
+  {% endif %}
+</div>
+{% endfor %}
+

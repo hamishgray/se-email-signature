@@ -1,0 +1,17 @@
+{% assign countries = site.data.countries %}
+
+{% for country in countries %}
+
+  {% assign logo = 'https://d1x3cbuht6sy0f.cloudfront.net/media/_admin/email/secretescapes.png' %}
+  {% if country.logo %}
+    {% assign logo = country.logo %}
+  {% endif %}
+  <div id="{{country.id}}-logo">
+    <!-- {{country.id}} logo -->
+    <a id="logo_href" href="{{country.site-link}}" style="color:#555555;text-decoration:none;">
+      <img id="logo_img" width="200" src="{{logo}}" alt="Secret Escapes">
+    </a>
+  </div>
+
+{% endfor %}
+

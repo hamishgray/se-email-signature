@@ -1,0 +1,9 @@
+{% assign countries = site.data.countries %}
+
+{% for country in countries %}
+<div id="{{country.id}}-website">
+  <!-- {{country.id}} website -->
+  Web:&nbsp;&nbsp;
+  <a id="web_href" style="color:#555555;text-decoration:none;" href="{{country.site-link}}"><span id="web">{{country.site-link}}</span></a>
+</div>
+{% endfor %}
