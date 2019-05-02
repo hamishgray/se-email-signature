@@ -35,3 +35,12 @@ select {
 }
 
 option {}
+
+.message {
+  margin-top: $s-4;
+  padding: $s-4 $s1;
+  border: 1px solid #00A37A;
+  font-size: 14px;
+  border-radius: 3px;
+  display: inline-block;
+}

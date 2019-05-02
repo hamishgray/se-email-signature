@@ -362,5 +362,3 @@ $('input[name=display-email]').change(function(){
   }
 });
 
-
-

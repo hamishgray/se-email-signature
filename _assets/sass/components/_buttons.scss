@@ -41,3 +41,21 @@
     }
   }
 }
+
+input[type="button"] {
+  border: 0;
+  position: relative;
+  display: inline-block;
+  padding: $s0 $s3;
+  color: $white;
+  background-color: $orange;
+  font-weight: 600;
+  font-size: $s-1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  line-height: 1.33;
+  border-radius: 3px;
+  cursor: pointer;
+  @include transition;
+}

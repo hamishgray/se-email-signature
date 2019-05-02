@@ -9,7 +9,9 @@ title: Email Signature
 <div class="container container--100 container--no-padding">
   <!-- Output -->
   <div class="boxpad--xxl bg--white">
-    {% include signature-output.html %}
+    <div id="signature">
+      {% include signature-output.html %}
+    </div>
   </div>
 </div>
 
@@ -67,4 +69,40 @@ title: Email Signature
     </div>
   </div>
 
+  <div class="vpad--xxs">
+    <input id="btn" onclick="CopyToClipboard('signature')" type="button" value="Copy signature"></input>
+    <div id="copy-message" class="message space--xxs" style="display: none;">The signature has been copied to your clipboard.</div>
+  </div>
+
 </div>
+
+
+<script type="text/javascript">
+  function CopyToClipboard(element) {
+
+  	var doc = document;
+  	var text = doc.getElementById(element);
+  	var range;
+    var selection;
+
+  	if (doc.body.createTextRange){
+  		range = doc.body.createTextRange();
+  		range.moveToElementText(text);
+  		range.select();
+  	}else if (window.getSelection){
+  		selection = window.getSelection();
+  		range = doc.createRange();
+  		range.selectNodeContents(text);
+  		selection.removeAllRanges();
+  		selection.addRange(range);
+   	}
+
+  	document.execCommand('copy');
+  	window.getSelection().removeAllRanges();
+
+  	$("#copy-message").fadeIn();
+    setTimeout(function() {
+    	$("#copy-message").fadeOut();
+    }, 3000);
+  }
+</script>
