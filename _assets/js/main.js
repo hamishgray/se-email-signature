@@ -128,8 +128,8 @@ function localisation(country){
     $('#facebook').attr("href",facebook_url_de);
     $('#instagram').attr("href",instagram_url_de);
     $('#address-row').html(address_de);
-    $('#twitter').hide();
-    $('#youtube').hide();
+    $('#social__twitter').hide();
+    $('#social__youtube').hide();
 
   }else if( country == 'it' ){
     // Italy
@@ -139,7 +139,7 @@ function localisation(country){
     $('#facebook').attr("href",facebook_url_it);
     $('#instagram').attr("href",instagram_url_it);
     $('#youtube').attr("href",youtube_url_it);
-    $('#twitter').hide();
+    $('#social__twitter').hide();
 
   }else if( country == 'fr' ){
     // France
@@ -160,7 +160,7 @@ function localisation(country){
     $('#facebook').attr("href",facebook_url_es);
     $('#instagram').attr("href",instagram_url_es);
     $('#twitter').attr("href",twitter_url_es);
-    $('#youtube').hide();
+    $('#social__youtube').hide();
 
   }else if( country == 'nl' ){
     // Netherlands
@@ -170,8 +170,8 @@ function localisation(country){
     $('#facebook').attr("href",facebook_url_nl);
     $('#youtube').attr("href",youtube_url_nl);
     $('#address-row').html(address_nl);
-    $('#twitter').hide();
-    $('#instagram').hide();
+    $('#social__twitter').hide();
+    $('#social__instagram').hide();
 
   }else if( country == 'be' ){
     // Belgium
@@ -181,8 +181,8 @@ function localisation(country){
     $('#facebook').attr("href",facebook_url_be);
     $('#youtube').attr("href",youtube_url_be);
     $('#address-row').html(address_be);
-    $('#twitter').hide();
-    $('#instagram').hide();
+    $('#social__twitter').hide();
+    $('#social__instagram').hide();
 
   }else if( country == 'ch' ){
     // Switzerland
@@ -191,8 +191,8 @@ function localisation(country){
     $('#logo_href').attr("href",web_url_ch);
     $('#facebook').attr("href",facebook_url_ch);
     $('#instagram').attr("href",instagram_url_ch);
-    $('#twitter').hide();
-    $('#youtube').hide();
+    $('#social__twitter').hide();
+    $('#social__youtube').hide();
     $('#address-row').hide();
 
   }else if( country == 'dk' ){
@@ -201,9 +201,9 @@ function localisation(country){
     $('#web_href').attr("href",web_url_dk);
     $('#logo_href').attr("href",web_url_dk);
     $('#facebook').attr("href",facebook_url_dk);
-    $('#twitter').hide();
-    $('#instagram').hide();
-    $('#youtube').hide();
+    $('#social__twitter').hide();
+    $('#social__instagram').hide();
+    $('#social__youtube').hide();
     $('#address-row').hide();
 
   }else if( country == 'no' ){
@@ -212,9 +212,9 @@ function localisation(country){
     $('#web_href').attr("href",web_url_no);
     $('#logo_href').attr("href",web_url_no);
     $('#facebook').attr("href",facebook_url_no);
-    $('#twitter').hide();
-    $('#instagram').hide();
-    $('#youtube').hide();
+    $('#social__twitter').hide();
+    $('#social__instagram').hide();
+    $('#social__youtube').hide();
     $('#address-row').hide();
 
   }else if( country == 'se' ){
@@ -225,7 +225,7 @@ function localisation(country){
     $('#facebook').attr("href",facebook_url_se);
     $('#instagram').attr("href",instagram_url_se);
     $('#youtube').attr("href",youtube_url_se);
-    $('#twitter').hide();
+    $('#social__twitter').hide();
     $('#address-row').hide();
 
   }else if( country == 'hk' ){
@@ -235,7 +235,7 @@ function localisation(country){
     $('#logo_href').attr("href",web_url_hk);
     $('#instagram').attr("href",instagram_url_hk);
     $('#twitter').attr("href",twitter_url_hk);
-    $('#youtube').hide();
+    $('#social__youtube').hide();
     $('#address-row').hide();
 
 
@@ -246,7 +246,7 @@ function localisation(country){
     $('#logo_href').attr("href",web_url_id);
     $('#instagram').attr("href",instagram_url_id);
     $('#twitter').attr("href",twitter_url_id);
-    $('#youtube').hide();
+    $('#social__youtube').hide();
     $('#address-row').hide();
 
   }else if( country == 'my' ){
@@ -256,7 +256,7 @@ function localisation(country){
     $('#logo_href').attr("href",web_url_my);
     $('#instagram').attr("href",instagram_url_my);
     $('#twitter').attr("href",twitter_url_my);
-    $('#youtube').hide();
+    $('#social__youtube').hide();
     $('#address-row').hide();
 
   }else if( country == 'sg' ){
@@ -266,7 +266,7 @@ function localisation(country){
     $('#logo_href').attr("href",web_url_sg);
     $('#instagram').attr("href",instagram_url_sg);
     $('#twitter').attr("href",twitter_url_sg);
-    $('#youtube').hide();
+    $('#social__youtube').hide();
     $('#address-row').hide();
 
   }else if( country == 'us' ){
