@@ -13,17 +13,17 @@
 
   &__input {
     & label { padding-bottom: 0.1em; display: block; font-weight: 600; }
-    & input[type="text"] {
-      padding: 0.4em 0.75em;
-      border-radius: 3px;
-      font-size: 1rem;
-      font-family: $font-core;
-      border: 0;
-      width: 100%;
-    }
   }
 }
-
+textarea,
+input[type="text"] {
+  padding: 0.4em 0.75em;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-family: $font-core;
+  border: 0;
+  width: 100%;
+}
 select {
   padding: 0.4em 0.75em;
   height: 30px;

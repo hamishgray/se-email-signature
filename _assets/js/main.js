@@ -19,8 +19,8 @@ function localisation(country){
   $('#logo').html( $("#" + country + "-logo").html() );
 }
 
-$("#country").on('change', function(){
-  var country = $("#country").val();
+$("#input-country").on('change', function(){
+  var country = $("#input-country").val();
   localisation(country);
 });
 
@@ -38,7 +38,7 @@ $(document).ready(function(){
   var phone = urlParams.get('phone');
   var email = urlParams.get('email');
   if(country){
-    document.getElementById('country').value = country;
+    document.getElementById('input-country').value = country;
     localisation(country);
   }
   if(name){
@@ -50,13 +50,25 @@ $(document).ready(function(){
     $('#position').html(position);
   }
   if(phone){
-    document.getElementById('input-phone').value = phone;
-    $('#phone').html(phone);
+    if(phone == 'false'){
+      $('#phone-row').hide();
+    }else{
+      document.getElementById('input-phone').value = phone;
+      $('#phone').html(phone);
+      var phUrl = "tel:" + phone.replace(/\s/g, '');
+      $('#phone_href').attr("href",phUrl);
+    }
   }
   if(email){
-    document.getElementById('input-email').value = email;
-    $('#email').html(email);
+    if(email == 'false'){
+      $('#email-row').hide();
+    }else{
+      document.getElementById('input-email').value = email;
+      $('#email').html(email);
+      $('#email_href').attr("href","mailto:" + email);
+    }
   }
+
 });
 
 
@@ -93,7 +105,7 @@ $('input[name=display-phone]').change(function(){
 $('#input-email').on("input", function(){
   var content = this.value;
   $('#email').html(content);
-  $('#email_href').attr("href",content);
+  $('#email_href').attr("href","mailto:" + content);
 });
 
 $('input[name=display-email]').change(function(){

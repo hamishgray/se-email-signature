@@ -25,9 +25,9 @@ title: Email Signature
     <p class="text text--xxl">Enter your details below to create your own Secret Escapes email signature</p>
   </div>
 
-  <div class="form__input vpad--xxs">
-    <label for="input-name">Select your country: </label>
-    <select name="country" id="country">
+  <div class="form__input vpad--xxxs">
+    <label for="input-country">Select your country: </label>
+    <select id="input-country" name="country">
       <option value="uk">United Kingdom</option>
       <option value="de">Germany</option>
       <option value="it">Italy</option>
@@ -47,37 +47,60 @@ title: Email Signature
     </select>
   </div>
 
-  <div class="form__input vpad--xxs">
+  <div class="form__input vpad--xxxs">
     <label for="input-name">Name: </label><input type="text" id="input-name">
   </div>
 
-  <div class="form__input vpad--xxs">
+  <div class="form__input vpad--xxxs">
     <label for="input-position">Position: </label><input type="text" id="input-position">
   </div>
 
-  <div class="form__input vpad--xxs">
+  <div class="form__input vpad--xxxs">
     <label for="input-phone">Phone: </label><input type="text" id="input-phone">
     <div>
       <input type="checkbox" name="display-phone" checked> Show phone number
     </div>
   </div>
 
-  <div class="form__input vpad--xxs">
+  <div class="form__input vpad--xxxs">
     <label for="input-email">Email: </label><input type="text" id="input-email">
     <div>
       <input type="checkbox" name="display-email" checked> Show email address
     </div>
   </div>
+  <div class="form__input vpad--xxxs" id="share-url" style="display: none;">
+    <textarea rows="1" id="input-share-url"></textarea>
+  </div>
 
-  <div class="vpad--xxs">
-    <input id="btn" onclick="CopyToClipboard('signature')" type="button" value="Copy signature"></input>
-    <div id="copy-message" class="message space--xxs" style="display: none;">The signature has been copied to your clipboard.</div>
+  <div class="vpad--xxxs">
+
+    <input id="btn" onclick="copyToClipboard('signature')" type="button" value="Copy signature"></input>
+    <input id="btn" onclick="shareURL()" type="button" value="Generate signature sharing URL"></input>
+
+    <div class="vpad--xxxs">
+      <div id="message__signature" class="message space--xxs" style="display: none;">The signature has been copied to your clipboard.</div>
+      <div id="message__url" class="message space--xxs" style="display: none;">The sharing URL for this signature has been copied to your clipboard.</div>
+    </div>
   </div>
 
 </div>
 
+
+
+<!-- Hidden country data for clone function -->
+<div class="hidden">
+  {% include signature/logo.html %}
+  {% include signature/social.html %}
+  {% include signature/web.html %}
+  {% include signature/address.html %}
+</div>
+
+
+
 <script type="text/javascript">
-  function CopyToClipboard(element) {
+
+  // COPY GENERATED SIGNATURE
+  function copyToClipboard(element) {
 
   	var doc = document;
   	var text = doc.getElementById(element);
@@ -88,7 +111,7 @@ title: Email Signature
   		range = doc.body.createTextRange();
   		range.moveToElementText(text);
   		range.select();
-  	}else if (window.getSelection){
+  	}else if(window.getSelection){
   		selection = window.getSelection();
   		range = doc.createRange();
   		range.selectNodeContents(text);
@@ -99,18 +122,53 @@ title: Email Signature
   	document.execCommand('copy');
   	window.getSelection().removeAllRanges();
 
-  	$("#copy-message").fadeIn();
+  	$("#message__" + element).fadeIn();
     setTimeout(function() {
-    	$("#copy-message").fadeOut();
+    	$("#message__" + element).fadeOut();
     }, 3000);
   }
+
+  // SHARE GENERATED URL WITH PREFILLED DATA
+  function shareURL(){
+
+    var baseURL = window.location.href.split('?')[0];
+    var country = '?country=uk',
+        name = '',
+        position = '',
+        phone = '',
+        email = '';
+
+    if( $('#input-country').val() ){
+      var country = "?country=" + $('#input-country').val();
+    }
+    if( $('#input-name').val() ){
+      var name = "&name=" + $('#input-name').val();
+    }
+    if( $('#input-position').val() ){
+      var position = "&position=" + $('#input-position').val();
+    }
+    if( !$('input[name=display-phone]').is(':checked') ){
+      var phone = "&phone=false";
+    }else if( $('#input-phone').val() ){
+      var phone = "&phone=" + $('#input-phone').val();
+    }
+    if( !$('input[name=display-email]').is(':checked') ){
+      var email = "&email=false";
+    }else if( $('#input-email').val() ){
+      var email = "&email=" + $('#input-email').val();
+    }
+
+    var url = baseURL + country + name + position + phone + email;
+    console.log( url );
+    $('#share-url').fadeIn();
+    $('#input-share-url').val( url );
+    $('#input-share-url').select();
+  	document.execCommand('copy');
+
+  	$("#message__url").fadeIn();
+    setTimeout(function() {
+    	$("#message__url").fadeOut();
+    }, 3000);
+  }
+
 </script>
-
-
-<!-- Hidden country data for clone function -->
-<div class="hidden">
-  {% include signature/logo.html %}
-  {% include signature/social.html %}
-  {% include signature/web.html %}
-  {% include signature/address.html %}
-</div>
