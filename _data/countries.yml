@@ -23,7 +23,7 @@
 - id: de
   name: Germany
   site-link: https://www.secretescapes.de
-  address: Klosterstraße 62  | 10179 Berlin
+  address: Klosterstraße 62, 10179 Berlin
   socials:
     - id: facebook
       name: Facebook
@@ -34,6 +34,10 @@
     - id: linkedin
       name: LinkedIn
       link: https://www.linkedin.com/company/secret-escapes/
+  legal: >
+     Registered Office: Berlin<br />
+     Commercial Register: Amtsgericht Charlottenburg HRB 138671B<br />
+     Managing Directors: Ognjen Zeric, Alex Saint, Tom Valentine
 
 - id: it
   name: Italy
@@ -96,7 +100,9 @@
 - id: nl
   name: Netherlands
   site-link: https://nl.secretescapes.com
-  address: Nieuwezijds Voorburgwal 162, 1012 SJ
+  address: >
+    Nieuwezijds Voorburgwal 162, 1012 SJ, Amsterdam, The Netherlands<br>
+    Klosterstraße 62, 10179, Berlin, Germany
   socials:
     - id: facebook
       name: Facebook
@@ -107,11 +113,17 @@
     - id: youtube
       name: YouTube
       link: https://www.youtube.com/channel/UCm8cmKl3bA5CjCoQgGDwiIA
+  legal: >
+     Registered Office: Berlin<br />
+     Commercial Register: Amtsgericht Charlottenburg HRB 138671B<br />
+     Managing Directors: Ognjen Zeric, Alex Saint, Tom Valentine
 
 - id: be
   name: Belgium
   site-link: https://be.secretescapes.com
-  address: Nieuwezijds Voorburgwal 162, 1012 SJ
+  address: >
+    Nieuwezijds Voorburgwal 162, 1012 SJ, Amsterdam, The Netherlands<br>
+    Klosterstraße 62, 10179, Berlin, Germany
   socials:
     - id: facebook
       name: Facebook
@@ -122,6 +134,10 @@
     - id: youtube
       name: YouTube
       link: https://www.youtube.com/channel/UCm8cmKl3bA5CjCoQgGDwiIA
+  legal: >
+     Registered Office: Berlin<br />
+     Commercial Register: Amtsgericht Charlottenburg HRB 138671B<br />
+     Managing Directors: Ognjen Zeric, Alex Saint, Tom Valentine
 
 - id: ch
   name: Switzerland
@@ -136,6 +152,10 @@
     - id: linkedin
       name: LinkedIn
       link: https://www.linkedin.com/company/secret-escapes/
+  legal: >
+     Registered Office: Berlin<br />
+     Commercial Register: Amtsgericht Charlottenburg HRB 138671B<br />
+     Managing Directors: Ognjen Zeric, Alex Saint, Tom Valentine
 
 - id: "no"
   name: Norway
@@ -162,6 +182,7 @@
 - id: se
   name: Sweden
   site-link: https://www.secretescapes.se
+  address: Fiskargatan 8 | 116 20 Stockholm | Sweden
   socials:
     - id: facebook
       name: Facebook

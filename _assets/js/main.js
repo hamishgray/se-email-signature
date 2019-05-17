@@ -17,6 +17,7 @@ function localisation(country){
   $('#address-row').html( $("#" + country + "-address").html() );
   $('#web-row').html( $("#" + country + "-website").html() );
   $('#logo').html( $("#" + country + "-logo").html() );
+  $('#legal-row').html( $("#" + country + "-legal").html() );
 }
 
 $("#input-country").on('change', function(){
